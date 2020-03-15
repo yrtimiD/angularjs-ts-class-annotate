@@ -1,0 +1,36 @@
+{
+	"name": "angularjs-ts-class-annotate",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"demo": "set DEBUG=* && node ./demo/test-run.js",
+		"start": "echo Nothing to start. Try npm test",
+		"clean": "rimraf dist demo/**/*.annotated.ts",
+		"prebuild": "npm run clean",
+		"build": "tsc"
+	},
+	"keywords": [
+		"ng",
+		"angular",
+		"angularjs",
+		"annotate",
+		"inject"
+	],
+	"author": {
+		"name": "Dmitry Gurovich",
+		"email": "yrtimid@gmail.com"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@types/debug": "^4.1.4",
+		"@types/node": "^12.6.8",
+		"rimraf": "^3.0.2",
+		"typescript": "^3.5.3"
+	},
+	"dependencies": {
+		"@phenomnomnominal/tsquery": "^3.0.0",
+		"debug": "^4.1.1"
+	}
+}
