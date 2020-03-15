@@ -16,15 +16,15 @@ fileContent = annotateTs(fileContent);
 fs.writeFileSync("some-class.annotated.ts", fileContent, "utf8");
 ```
 
-### some-class.ts
-```
+### Original some-class.ts
+```typescript
 class Class1 {
 	constructor(private $log: ng.ILogService, private $window: ng.IWindowService) {
 	}
 }
 ```
-### some-class.annotated.ts
-```
+### Annotated some-class.annotated.ts
+```typescript
 class Class1 {
 static $inject = ["$log","$window"];
 	constructor(private $log: ng.ILogService, private $window: ng.IWindowService) {
