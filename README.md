@@ -7,7 +7,7 @@ AngularJS Typescript class-only annotation library
 * Existing $inject statements are totally ignored.
 
 ## Usage example
-```
+```js
 const fs = require("fs");
 const annotateTs = require("angularjs-ts-class-annotate");
 
