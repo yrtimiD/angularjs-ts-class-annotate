@@ -40,5 +40,8 @@
 	"dependencies": {
 		"@phenomnomnominal/tsquery": "^3.0.0",
 		"debug": "^4.1.1"
+	},
+	"peerDependencies": {
+		"typescript": "^3"
 	}
 }
